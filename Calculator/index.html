@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="calculatorBody">
+        <input type="text"  id="display" class="input" readonly>
+        <div id="buttons">
+            
+
+            <input type="button" value="." onclick="addToDisplay('.')";>
+            <input type="button" value="C" onclick="reset()";>
+            <input type="button" value="Backspace" onclick="removeLastNumber()";>
+            
+            
+            
+            
+            <input id="but" type="button" value="1" onclick="addToDisplay(1)";>
+            <input id="but" type="button" value="2" onclick="addToDisplay(2)";>
+            <input id="but" type="button" value="3" onclick="addToDisplay(3)";>
+            <input type="button" value="4" onclick="addToDisplay(4)";>
+            <input type="button" value="5" onclick="addToDisplay(5)";>
+            <input type="button" value="6" onclick="addToDisplay(6)";>
+            <input type="button" value="7" onclick="addToDisplay(7)";>
+            <input type="button" value="8" onclick="addToDisplay(8)";>
+            <input type="button" value="9" onclick="addToDisplay(9)";>
+            <input type="button" value="+" onclick="addToDisplay('+')";>
+            <input type="button" value="-" onclick="addToDisplay('-')";>
+            <input type="button" value="*" onclick="addToDisplay('*')";>
+            <input type="button" value="/" onclick="addToDisplay('/')";>
+            <input type="button" value="%" onclick="addToDisplay('0,10')";>
+
+
+
+
+
+
+            <input type="button" value="=" onclick="calculation()";>
+            
+        </div>
+        
+
+
+    </div>
+   
+
+    <script src="index.js" > </script>
+</body>
+</html>

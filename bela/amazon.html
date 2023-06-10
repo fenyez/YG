@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Amazon Calculator</p>
+    <input placeholder="Cost of order" class="js-cost-input" onkeyup="enterKeyElement()">
+    <button onclick="
+    calculeteElement();
+    
+    "
+    >Calculate</button>
+
+    <p class="js-result"></p>
+    
+    <script>
+        function enterKeyElement(){
+                 if(event.key === 'Enter'){
+                    calculeteElement()  }  
+    }
+        
+        function calculeteElement(){
+            const inputElement = document.querySelector('.js-cost-input');
+            let cost = Number(inputElement.value);
+
+            if(cost < 50 ){
+                cost = (cost + 10).toFixed(2);
+            } else (cost = cost + ' + Darmowa Dostawa');
+
+            document.querySelector('.js-result').innerHTML = `$${cost}`;
+        }
+    </script>
+</body>
+</html>

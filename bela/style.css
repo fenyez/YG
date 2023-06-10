@@ -1,0 +1,9 @@
+#reset   {
+    display: block;
+    align-content:  center;
+    font-size: 2px;
+}
+
+#dec , #reset , #inc {
+    scale: 2;
+}
