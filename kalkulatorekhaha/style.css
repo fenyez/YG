@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    height: 100vh;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    align-items: flex-start;
+    padding: 38px 52px;
+    gap: 10px;
+    isolation: isolate;
+    position: absolute;
+    width: 419px;
+    height: 600px;
+    left: 750px;
+    top: 195px;
+    background: #D9D9D9;
+    border-radius: 41px;
+
+}
+
+#input {
+    font-size: 32px;
+    grid-column: 1 / span 3;
+    width: 315px;
+    height: 75px;
+    background: #000000;
+    color: white;
+}
+
+#number {
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+
+    border-radius: 50px;
+}

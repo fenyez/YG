@@ -34,6 +34,7 @@ const submit = document.getElementById('sendButton');
 
 function randomQuestion() {
     i = Math.floor(Math.random() * dataBase.length );
+  
 
     document.getElementById("box").innerText = dataBase[i].pytanie;
     document.getElementById("a").innerText = dataBase[i].a;
@@ -52,11 +53,17 @@ submit.addEventListener('click', ()=>{
     if(answer.checked) {
       checkedAnswer = answer.value;
       console.log(checkedAnswer);
-} else if(checkedAnswer === dataBase[i].answer){
-  alert("brawo");
-} 
-})});
+    }})
+    if (checkedAnswer === dataBase[i].answer ){
+      alert("Poprawna odpowiedź")
+     }else {alert(`Zła odpowiedź. Poprawna odpowiedź to: ${dataBase[i].answer} `)};
+     
+     randomQuestion()
+  })
+
+
   
+
 
 
 

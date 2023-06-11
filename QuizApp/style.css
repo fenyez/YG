@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100hv;
+    font-size: 24px;
+    background-color: black;
+    
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+    background-color: rgb(255, 255, 255);
+    width: 800px;
+    height: 300px;
+
+}
