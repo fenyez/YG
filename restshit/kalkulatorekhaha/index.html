@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulatolek</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="kalkulator" >
+        <div class="darkElement" >
+            <label name="switch" class="switch">
+                <input class="check" type="checkbox">
+                <span class="slider round"></span>
+                <i class="fas fa-moon"></i>
+                <label class="DarkMode" for="switch">DarkMode</label>
+              </label>
+        </div>
+        
+      
+        <div class="container">
+            <input id="input" type="text" readonly >
+            
+            <input  id="number" type="button" value="C" onclick="reset()" >
+            <input  id="number" type="button" value="delete" onclick="backspace()" >
+            <input  id="number" type="button" value="%" onclick="procent()" >
+            <input  id="number" type="button" value="/" onclick="addToDisplay('/')" >  
+            
+            
+            
+         
+            <input  id="number" type="button" value="1" onclick="addToDisplay(1)" >
+            <input  id="number" type="button" value="2" onclick="addToDisplay(2)" >
+            <input  id="number" type="button" value="3" onclick="addToDisplay(3)" >
+            <input  id="number" type="button" value="*" onclick="addToDisplay('*')" >
+            <input  id="number" type="button" value="4" onclick="addToDisplay(4)" >
+            <input  id="number" type="button" value="5" onclick="addToDisplay(5)" >
+            <input  id="number" type="button" value="6" onclick="addToDisplay(6)" >
+            <input  id="number" type="button" value="-" onclick="addToDisplay('-')" >
+            <input  id="number" type="button" value="7" onclick="addToDisplay(7)" >
+            <input  id="number" type="button" value="8" onclick="addToDisplay(8)" >
+            <input  id="number" type="button" value="9" onclick="addToDisplay(9)" >
+            <input  id="number" type="button" value="+" onclick="addToDisplay('+')" >
+            <input  id="number0" type="button" value="0" onclick="addToDisplay(0)" >
+            <input  id="numberent" type="button" value="." onclick="addToDisplay('.')" > 
+            
+   
+            
+           
+            <input  id="numberent" type="button" value="=" onclick="calculation()" >
+
+
+      </div>  
+    
+    
+
+    
+</div>
+</body>
+</html>
