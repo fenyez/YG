@@ -1,0 +1,186 @@
+
+body{
+    background-color: aliceblue;
+
+}
+.contactbd {
+    background-color: white;
+    width: 100%;
+    height: 2000px;
+    z-index: 1; /* Zwiększ wartość z-index */
+    position: absolute;
+    top: 50%;
+}
+
+.backgroundcontact {
+    display: flex;
+    opacity: 0.1;
+    width: 100%;
+    position: relative; /* Dodaj */
+    z-index: -1;
+}
+
+.contactcontent{
+    position: absolute;
+    left: 300px;
+    max-width: 500px;
+    top: 200px;
+
+}
+.contactcontent h2{
+    font-size: 44px;
+}
+.contactcontent a{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+.contactbd input{
+    
+    height: 50px;
+    width: 605px;
+    background-color:#e2e2e2;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+.inputycontact {
+    max-width: 610px;
+    gap: 20px;
+    position: absolute;
+    right: 330px;
+    top: 10%;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inputycontact button{
+    height: 50px;
+    background-color: #FF4D30;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+
+.contactcontent h1{
+    position: absolute;
+    top: -450px;
+    font-size: 40px;
+}
+
+
+
+
+.gg-phone {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    transform: scale(var(--ggs,1))
+ }
+ .gg-phone::after,
+ .gg-phone::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+ }
+ .gg-phone::after {
+    width: 18px;
+    height: 18px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-left: 4px solid;
+    border-bottom: 4px solid;
+    left: 2px;
+    bottom: 2px;
+    background:
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat right 11px/6px 4px,
+       linear-gradient(
+          to left,
+          currentColor 10px,
+          transparent 0
+       ) no-repeat -1px 0/4px 6px
+ }
+ .gg-phone::before {
+    width: 20px;
+    height: 20px;
+    border: 6px double;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    bottom: 2px;
+    left: 2px
+ }
+
+ .phone {
+    display: flex;
+ }
+
+
+ .gg-mail,
+.gg-mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid
+}
+.gg-mail {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    position: relative;
+    width: 18px;
+    border-radius: 2px;
+    bottom: -5px;
+}
+.gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+}
+.mail {
+    display: flex;
+}
+
+#message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #message-container label {
+    margin-bottom: 5px;
+  }
+  
+  #message {
+    height: 250px;
+    width: 605px;
+    resize: none;
+    border: none;
+    background-color:#e2e2e2;
+    border-radius: 3px;
+
+  }
+
+.foot
+
+  .ftsection1 {
+    max-width: 300px;
+  }
